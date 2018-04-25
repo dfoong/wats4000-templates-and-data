@@ -1,6 +1,6 @@
 <template>
   <div class="results">
-    <h1>Top Movies from the 20<sup>th</sup> Century</h1>
+    <h1>Top American Movies from the 20<sup>th</sup> Century</h1>
     <p class="search-meta">
       <span class="current-page"><b>Current Page:</b> {{ page }} </span>
       <span class="total-pages"><b>Pages:</b> {{ total_results }}</span>
@@ -22,7 +22,7 @@
         </p>
         <p class="release-date">Original Release: {{result.release_date}}</p>
         <ul class="genre-list">
-          <li v-for="genre in result.genres">{{genre}}</li><!-- TODO: Fill in the genre name from the data. -->
+          <li v-for="genre in result.genres">{{genre}}</li>
         </ul>
       </li>
     </ul>
